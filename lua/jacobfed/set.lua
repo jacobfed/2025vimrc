@@ -2,6 +2,8 @@ vim.opt.nu = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 
+vim.g.netrw_bufsettings = 'noma,nomod,nu,nowrap,ro,nobl'
+
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4

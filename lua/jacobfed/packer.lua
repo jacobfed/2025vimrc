@@ -17,11 +17,11 @@ return require('packer').startup(function(use)
 	  'rose-pine/neovim',
 	  as = 'rose-pine',
 	  config = function()
-		  vim.cmd('colorscheme rose-pine')
+          vim.cmd('colorscheme rose-pine')
 	  end
   })
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
- use('nvim-treesitter/playground')
+  use('nvim-treesitter/playground')
   use {
   'VonHeikemen/lsp-zero.nvim',
   branch = 'v3.x',
@@ -37,4 +37,5 @@ return require('packer').startup(function(use)
     {'L3MON4D3/LuaSnip'},
   }
 }
+    use('tpope/vim-fugitive')
 end)
